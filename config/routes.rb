@@ -12,4 +12,6 @@ resources :books do
   end
 end
 
+
+root "books#index"
 end
