@@ -1,10 +1,11 @@
 Rails.application.routes.draw do
+  resources :user_books
+  resources :users
   resources :books do
     member do
       get 'confirm_destroy'
     end
   end
 
-  root 'books#index'
-  # Other routes go here if needed
+  root 'user_books#index'
 end
